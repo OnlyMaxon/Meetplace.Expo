@@ -1,3 +1,6 @@
+// Duplicate of root lib/registrationTypes.ts. Keep a default export so expo-router treats this as a valid route file.
+import React from 'react';
+
 export type RegistrationDraft = {
   email?: string;
   password?: string;
@@ -12,6 +15,5 @@ export type RegistrationDraft = {
   lastName?: string | null;
 };
 
-import React from 'react';
 const _Noop: React.FC = () => null;
 export default _Noop;

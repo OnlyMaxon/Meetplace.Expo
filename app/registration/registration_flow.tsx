@@ -9,8 +9,7 @@ import StepAddNameSurname from './stepadd_namesurname';
 import Step2Photo from './step2_photo';
 import Step3Nationality from './step3_nationality';
 import Step4Languages from './step4_languages';
-import Step5Interests from './step5_interests';
-import Step6Student from './step6_student';
+// interests and student steps removed per new requirements
 import Step7Nickname from './step7_nickname';
 import Step8StatusCountry from './step8_status_country';
 
@@ -40,11 +39,9 @@ export default function RegistrationFlow() {
     <StepAddNameSurname draft={draft} onNext={next} key="s2" />,
     <Step2Photo draft={draft} onSkip={next} onNext={next} key="s3" />,
     <Step3Nationality draft={draft} onChanged={(n:any)=>{draft.nationality=n;}} onNext={next} onBack={back} key="s4" />,
-    <Step4Languages draft={draft} onNext={next} onBack={back} key="s5" />,
-    <Step5Interests draft={draft} onNext={next} onBack={back} key="s6" />,
-    <Step6Student draft={draft} onNext={next} onBack={back} key="s7" />,
-    <Step7Nickname draft={draft} onNext={next} onBack={back} key="s8" />,
-    <Step8StatusCountry draft={draft} onNext={finish} onBack={back} key="s9" />,
+  <Step4Languages draft={draft} onNext={next} onBack={back} key="s5" />,
+  <Step7Nickname draft={draft} onNext={next} onBack={back} key="s6" />,
+  <Step8StatusCountry draft={draft} onNext={finish} onBack={back} key="s7" />,
   ];
 
   return (

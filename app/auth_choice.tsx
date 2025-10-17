@@ -7,7 +7,7 @@ export default function AuthChoice() {
 
   return (
     <View style={{flex:1,alignItems:'center',justifyContent:'center',padding:24}}>
-      <Text style={{fontSize:22,marginBottom:16}}>Welcome to MeetPlace</Text>
+  <Text style={{fontSize:22,marginBottom:16}}>Welcome to App expo go (Maxonchik)</Text>
   <Button title="Login" onPress={() => router.push('/login' as any)} />
       <View style={{height:8}} />
   <Button title="Register" onPress={() => router.push('/registration' as any)} />

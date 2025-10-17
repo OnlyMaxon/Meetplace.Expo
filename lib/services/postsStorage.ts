@@ -30,7 +30,7 @@ export async function seedMockPosts() {
   if (existing.length > 0) return existing;
   const now = new Date().toISOString();
   const seed: Post[] = [
-    { id: 'p1', author: 'MeetPlace', text: 'Welcome to MeetPlace — your community app (mock post).', timestamp: now },
+    { id: 'p1', author: 'App expo go (Maxonchik)', text: 'Welcome to App expo go (Maxonchik).', timestamp: now },
     { id: 'p2', author: 'Alice', text: 'Hello everyone! This is a sample post.', timestamp: now },
   ];
   await savePosts(seed);

@@ -5,8 +5,6 @@ export type RegistrationDraft = {
   coverPath?: string | null;
   nationality?: string | null;
   languages?: string[];
-  interests?: string[];
-  isStudent?: boolean;
   nickname?: string | null;
   status?: string | null;
   country?: string | null;
@@ -22,7 +20,6 @@ export function validateRegistrationDraft(d: RegistrationDraft) {
   if (!d.lastName) missing.push('lastName');
   if (!d.nationality) missing.push('nationality');
   if (!d.languages || d.languages.length === 0) missing.push('languages');
-  if (!d.interests || d.interests.length === 0) missing.push('interests');
   // nickname and photo are optional but you can enable if needed
   return { ok: missing.length === 0, missing };
 }
