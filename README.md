@@ -7,13 +7,13 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 1. Install dependencies
 
    ```bash
-   npm install
+   pnpm install
    ```
 
 2. Start the app
 
    ```bash
-   npx expo start
+   pnpm start
    ```
 
 In the output, you'll find options to open the app in a
@@ -48,3 +48,23 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+## Continuous Integration (CI)
+
+This project includes a GitHub Actions workflow that runs linting, TypeScript checks, and a web export on every push and pull request.
+
+- Workflow file: `.github/workflows/ci.yml`
+- Local equivalent: `pnpm run ci`
+
+Optional badge (update OWNER/REPO if your repository name differs):
+
+```
+![CI](https://github.com/OWNER/REPO/actions/workflows/ci.yml/badge.svg)
+```
+
+## Useful scripts
+
+- `pnpm lint` – Run ESLint via Expo config
+- `pnpm typecheck` – TypeScript project check without emitting
+- `pnpm build:web` – Export a static web build to `dist/`
+- `pnpm run ci` – Lint, type-check, and build web (used by CI)
